@@ -1,0 +1,29 @@
+{ "projects": [{
+    "name": "Dirtbag: Fred Beckey documentary",
+    "contact": "Some Guy in Seattle",
+    "description": "A video about the life and times of Fred Buckey, first ascentionist",
+    "amount": 50000,
+    "purpose": "To finish the documentary and add sounds and special drone effects",
+    "reward": "For $30, you get a DVD",
+    "type": "Movie",
+    "image": "https://i.ytimg.com/vi/YgY0C-DMS-w/maxresdefault.jpg"
+  }, {
+    "name": "Honky Tonk Express",
+    "contact": "Tracie Weitzman",
+    "description": "A musical survey about honky tonk in the Pacific Northwest",
+    "amount": 1000,
+    "purpose": "To produce an album",
+    "reward": "For $15, you can hear the mp3 outtakes",
+    "type": "Music",
+    "image": "http://uvmbored.com/wp-content/uploads/2016/12/Honky-Tonk.jpg"
+  }, {
+    "name": "Alternative energy automobile",
+    "contact": "Bob Frapples",
+    "description": "Fund my amazing car that I've installed a perpetual motion machine to power it!",
+    "amount": 1000000000,
+    "purpose": "Make me rich from my invention!",
+    "reward": "I'll give you a ride anywhere in downtown Portland.",
+    "type": "Invention",
+    "image": "http://futuristicnews.com/wp-content/uploads/2012/05/Buick-Ula-futuristic-car-josh-henry-01.jpg"
+  }]
+}

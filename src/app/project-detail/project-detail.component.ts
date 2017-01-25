@@ -12,8 +12,8 @@ import { ProjectService } from '../project.service';
 })
 
 export class ProjectDetailComponent implements OnInit {
-  projectId: number = null;
-  projectToDisplay: Project;
+  projectId: string;
+  projectToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private projectService: ProjectService) { }
 

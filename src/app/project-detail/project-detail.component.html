@@ -1,12 +1,12 @@
 <div>
-  <img src="{{projectToDisplay.image}}" alt="">
-  <h3>{{projectToDisplay.name}}</h3>
+  <img src="{{(projectToDisplay | async)?.image}}" alt="">
+  <h3>{{(projectToDisplay | async)?.name}}</h3>
   <ul>
-    <li>{{projectToDisplay.contact}}</li>
-    <li>{{projectToDisplay.description}}</li>
-    <li>{{projectToDisplay.amount}}</li>
-    <li>{{projectToDisplay.purpose}}</li>
-    <li>{{projectToDisplay.reward}}</li>
-    <li>{{projectToDisplay.type}}</li>
-  <ul>
+    <li>{{(projectToDisplay | async)?.contact}}</li>
+    <li>{{(projectToDisplay | async)?.description}}</li>
+    <li>{{(projectToDisplay | async)?.amount}}</li>
+    <li>{{(projectToDisplay | async)?.purpose}}</li>
+    <li>{{(projectToDisplay | async)?.reward}}</li>
+    <li>{{(projectToDisplay | async)?.type}}</li>
+  </ul>
 </div>

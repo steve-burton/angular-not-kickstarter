@@ -1,0 +1,48 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Project to List</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <label>Project Name:</label>
+      <br>
+      <input #newName>
+    </div>
+    <div>
+      <label>Project Contact:</label>
+      <br>
+      <input #newContact>
+    </div>
+    <div>
+      <label>Project Description:</label>
+      <br>
+      <input #newDescription>
+    </div>
+    <div>
+      <label>Project Amount:</label>
+      <br>
+      <input #newAmount>
+    </div>
+    <div>
+      <label>Project Purpose:</label>
+      <br>
+      <input #newPurpose>
+    </div>
+    <div>
+      <label>Project Reward:</label>
+      <br>
+      <input #newReward>
+    </div>
+    <div>
+      <label>Project Type:</label>
+      <br>
+      <input #newType>
+    </div>
+    <div>
+      <label>Project Image:</label>
+      <br>
+      <input #newImage>
+    </div>
+    <button (click)="submitForm(newName.value, newContact.value, newDescription.value, newAmount.value, newPurpose.value, newReward.value, newType.value, newImage.value); newName.value=''; newContact.value=''; newDescription.value=''; newAmount.value=''; newPurpose.value=''; newReward.value=''; newType.value=''; newImage.value=''">Add Project</button>
+  </div>
+</div>

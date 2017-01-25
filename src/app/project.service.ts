@@ -1,20 +1,25 @@
 import { Injectable } from '@angular/core';
 import { Project } from './project.model';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class ProjectService {
+  projects: FirebaseListObservable<any[]>;
 
-  constructor() { }
-  // getProjects() {
-  //   return PROJECTS;
-  // }
+  constructor(private angularFire: AngularFire) {
+    this.projects = angularFire.database.list('projects');
+  }
 
-  // getProjectById(projectId: number) {
-  //   for (var i= 0; i <= PROJECTS.length - 1; i++) {
-  //     if (PROJECTS[i].id === projectId) {
-  //       return PROJECTS[i];
-  //     }
-  //   }
-  // }
+  getProjects() {
+    return this.projects;
+  }
+
+  addProject(newProject: Project) {
+    this.projects.push(newProject);
+  }
+  getProjectById(projectId: string) {
+    return this.angularFire.database.object('projects/' + projectId);
+  }
+
 
 }
