@@ -1,0 +1,8 @@
+<h2>These projects need your funding</h2>
+
+<div *ngFor="let project of projects" (click)="gotToDetailPage(project)">
+<img src={{project.image}}>
+  <h3>{{project.name}}</h3>
+  <h4>{{project.description}}</h4>
+  <h4>{{project.amount}}</h4>
+</div>
