@@ -1,0 +1,23 @@
+<div *ngIf="selectedProject">
+  <h3><em>Edit</em> {{selectedProject.name}}</h3>
+  <div>
+    <label>Edit Project Name:</label>
+    <input [(ngModel)]="selectedProject.name"><br>
+    <label>Edit Project Contact:</label>
+    <input [(ngModel)]="selectedProject.contact"><br>
+    <label>Edit Project Description:</label>
+    <input [(ngModel)]="selectedProject.description"><br>
+    <label>Edit Project Amount:</label>
+    <input [(ngModel)]="selectedProject.amount"><br>
+    <label>Edit Project Purpose:</label>
+    <input [(ngModel)]="selectedProject.purpose"><br>
+    <label>Edit Project reward:</label>
+    <input [(ngModel)]="selectedProject.reward"><br>
+    <label>Edit Project Type:</label>
+    <input [(ngModel)]="selectedProject.type"><br>
+    <label>Edit Project Image:</label>
+    <input [(ngModel)]="selectedProject.image"><br>
+    <button class="btn btn-default" (click)="beginUpdatingProject(selectedProject)">Update Project</button><br>
+    <button class="btn btn-danger" (click)="beginDeletingProject(selectedProject)">Delete</button><br>
+  </div>
+</div>
