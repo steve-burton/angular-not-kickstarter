@@ -23,11 +23,4 @@ export class ProjectDetailComponent implements OnInit {
     });
     this.projectToDisplay = this.projectService.getProjectById(this.projectId);
   }
-
-  // selectedProject: Project = this.projects[0];
-  //
-  // editProject() {
-  //
-  // }
-
 }

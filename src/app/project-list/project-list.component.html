@@ -1,6 +1,12 @@
+<div class="price-filter">
+  <label for="byAmount">Maximum price:</label>
+  <input type="number" #amountSelection>
+  <button (click)="onAmountChange(amountSelection.value)">Update Search</button>
+</div>
+
 <h2>These projects need your funding</h2>
 
-<div class="project-list" *ngFor="let project of projects | async">
+<div class="project-list" *ngFor="let project of projects | async | byAmount:filterByAmount">
 <img src={{project.image}}>
   <h3 (click)="goToDetailPage(project)">{{project.name}}</h3>
   <h4>{{project.description}}</h4>
